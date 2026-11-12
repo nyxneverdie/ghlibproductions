@@ -1,0 +1,16 @@
+{
+  "name": "ghlibproduction-auth",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "better-auth": "1.7.10",
+    "pg": "8.16.3"
+  },
+  "scripts": {
+    "auth:migrate": "npx auth@1.7.10 migrate --config ./auth/config.js",
+    "auth:setup-admin": "node auth/setup-admin.js"
+  }
+}
